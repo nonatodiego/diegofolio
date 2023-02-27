@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import FilesIcon from './icons/FilesIcon';
-import GithubIcon from './icons/GithubIcon';
 import CodeIcon from './icons/CodeIcon';
 import PencilIcon from './icons/PencilIcon';
 import MailIcon from './icons/MailIcon';
@@ -13,23 +12,19 @@ const sidebarTopItems = [
   {
     Icon: FilesIcon,
     path: '/',
-  },
-  {
-    Icon: GithubIcon,
-    path: '/github',
-  },
-  {
-    Icon: CodeIcon,
-    path: '/projects',
-  },
+  },  
   {
     Icon: PencilIcon,
-    path: '/articles',
+    path: '/about',
   },
   {
     Icon: MailIcon,
     path: '/contact',
   },
+  {
+    Icon: CodeIcon,
+    path: '/projects',
+  }, 
 ];
 
 const sidebarBottomItems = [
